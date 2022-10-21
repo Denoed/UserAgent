@@ -9,7 +9,7 @@ interface CommonOptions {
 
 
 /**
- *  @brief Fetch the list of common UserAgents
+ *  Fetch the list of common UserAgents
  *
  *  ## Example
  *  
@@ -19,6 +19,14 @@ interface CommonOptions {
  *  const agents = await common();
  *
  *  console.log('Common UserAgents:',agents);
+ *  ```
+ *
+ *  ```js
+ *  ...
+ *  
+ *  const rawData = await common({ raw : true });
+ *
+ *  console.log('Common UserAgents:',rawData);
  *  ```
  */
 
