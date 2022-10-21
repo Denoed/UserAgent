@@ -22,6 +22,17 @@ have a simple JSON endpoint.
 <br>
 <br>
 
+## Endpoints
+
+*Hosted data on GitHub static pages.*
+
+<br>
+
+-   [https://denoed.github.io/UserAgents/Common.json](https://denoed.github.io/UserAgents/Common.json)
+
+<br>
+<br>
+
 ## Updates
 
 There is currently no automated updating and <br>
