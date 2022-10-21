@@ -7,11 +7,17 @@ import * as Paths from './Paths.js'
 const { writeTextFile } = Deno;
 
 
+const timestamp = new Date()
+    .toUTCString();
+
 const agents = 
     await fetchAgents();
 
+
+const data = { timestamp , agents };
+
 const json = 
-    pretty(agents);
+    pretty(data);
 
 await writeTextFile(Paths.Common,json);
 

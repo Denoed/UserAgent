@@ -7,29 +7,36 @@ const pair = ( key , value ) =>
     indent(`"${ key }" : "${ value }"`);
 
 
-export function pretty ( headers ){
+export function pretty ( data ){
     
-    let string = '';
+    const { agents , timestamp } = data;
     
-    string += '[';
+    
+    let string = '{\n';
+    
+    string += `    "timestamp" : "${ timestamp }" ,\n`;
+    
+    string += '    "agents" : [';
 
-    headers.forEach(( header , index ) => {
+    agents.forEach(( agent , index ) => {
 
         if(index > 0)
             string += ',';
 
         string += '{\n';
         
-        const { percent , useragent , system } = header;
+        const { percent , useragent , system } = agent;
         
-        string += pair('useragent',useragent) + ' ,\n';
-        string += pair('percent',percent) + ' ,\n';
-        string += pair('system',system) + '\n';
+        string += '    ' + pair('useragent',useragent) + ' ,\n';
+        string += '    ' + pair('percent',percent) + ' ,\n';
+        string += '    ' + pair('system',system) + '\n';
         
-        string += '}';
+        string += '    }';
     })
     
     string += ']\n';
+    
+    string += '}\n'
 
     return string;
 }
