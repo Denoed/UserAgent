@@ -1,7 +1,7 @@
 
 <div align = center>
 
-# UserAgent
+# UserAgents
 
 ***[Deno]*** *module providing access* <br>
 *to the latest **UserAgents**.*
