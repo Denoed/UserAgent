@@ -1,0 +1,8 @@
+{
+    "imports" : {
+        
+        "WebView" : "https://deno.land/x/webview@0.7.5/mod.ts" ,
+        
+        "Path" : "https://deno.land/std@0.160.0/path/mod.ts"
+    }
+}
