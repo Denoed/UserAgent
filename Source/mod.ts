@@ -14,19 +14,17 @@ interface CommonOptions {
  *  ## Example
  *  
  *  ```js
- *  import { common } from 'https://deno.land/x/useragents/mod.ts'
- *  
- *  const agents = await common();
+ *  const agents = 
+ *      await common();
  *
- *  console.log('Common UserAgents:',agents);
+ *  console.log('UserAgent List:',agents);
  *  ```
  *
  *  ```js
- *  ...
- *  
- *  const rawData = await common({ raw : true });
+ *  const rawData = 
+ *      await common({ raw : true });
  *
- *  console.log('Common UserAgents:',rawData);
+ *  console.log('Raw Data:',rawData);
  *  ```
  */
 
